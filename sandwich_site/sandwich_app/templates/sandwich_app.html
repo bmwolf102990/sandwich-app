@@ -1,0 +1,20 @@
+<html>
+<body>
+    <h1>Sandwich Home</h1>
+    <h3>Ingredients:</h3>
+
+    <ul>
+        {% for ingredient in ingredients %}
+        <li>
+            <a href="/sandwich/ingredients/{{ingredient}}"> {{ ingredient }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <p>Click the button if you are hungry...</p>
+    <button><a href="/sandwich/random">Make a sandwich</a></button>
+    
+    <p>Click the button below to see the full menu...</p>
+    <button><a href="/sandwich/menu">Full Menu</button>
+</body>
+</html>
